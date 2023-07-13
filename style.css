@@ -1,0 +1,119 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #4C4C78;
+}
+.nav {
+    margin: 0 7rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+    text-align: center;
+}
+.nav .logo h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+     color: white;
+}
+.nav .navigation ul {
+    display: flex;
+        flex-direction: row;
+}
+.nav .navigation ul li{
+    list-style: none;
+    padding: 0 1rem;
+    
+}
+.nav .navigation ul li a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    transition: 0.3s ease;
+}
+.nav .navigation ul li a:hover {
+    color: blue;
+}
+.nav .navigation ul li a span{
+    font-size: 0.9rem;
+    border: 1px solid #6927ff;
+    padding: 12px 20px;
+    background-color: #6927ff;
+    border-radius: 5px;
+}
+.home{
+    margin: 0 7rem;
+        padding: 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+}
+.home .text{
+    width: 35%;
+
+}
+.home .text h5{
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #b091f8;
+
+}
+.home .text h1{
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    width: 35%;
+    line-height: 65px;
+    padding-bottom: 10px;
+}
+.home .text p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #afb9cf;
+    line-height: 30px;
+    padding-bottom: 12px;
+}
+.home .text button{
+    background-color: #0EA5E7;
+    border: #6927ff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 15px 30px -12px rgb(0 0 0 / 20%);
+    transition: 0.3s ease ;
+}
+.home .text button:hover{
+    background: transparent;
+}
+.home .back {
+    width: 52%;
+}
+.home .back img {
+    width: 200%;
+    animation: up-down 2s ease-in-out infinate alternate-reverse both;
+}
+@keyframes up-down{
+    0% {
+         transform: translateX(-12px);
+        }
+    100% {
+        transform: translateY(-12px);
+    }
+}
